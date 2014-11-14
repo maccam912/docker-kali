@@ -1,6 +1,8 @@
 FROM debian:wheezy
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
+RUN apt-get update && apt-get upgrade
+
 RUN apt-get install wget curl debootstrap -y
 
 RUN wget -qO- https://get.docker.com/ | sh
