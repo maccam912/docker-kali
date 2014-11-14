@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian
 MAINTAINER Matt Koski <maccam912@gmail.com>
 
 RUN apt-get update && apt-get upgrade -y
